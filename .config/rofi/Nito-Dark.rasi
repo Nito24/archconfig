@@ -6,28 +6,29 @@
 
 * {
     selected-normal-foreground:  rgba ( 249, 249, 249, 100 % );
-    foreground:                  rgba ( 196, 203, 212, 100 % );
+    foreground:                  rgba ( 217, 219, 217, 100 % );
     normal-foreground:           @foreground;
     //alternate-normal-background: rgba ( 64, 69, 82, 59 % );
     //alternate-normal-background: @background;
-    alternate-normal-background: rgba ( 31, 33, 41, 15% );
+    alternate-normal-background: rgba ( 58, 64, 63, 15% );
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-urgent-foreground:  rgba ( 249, 249, 249, 100 % );
     blue:                        rgba ( 38, 139, 210, 100 % );
     urgent-foreground:           rgba ( 204, 102, 102, 100 % );
     alternate-urgent-background: rgba ( 75, 81, 96, 90 % );
-    active-foreground:           rgba ( 101, 172, 255, 100 % );
+    active-foreground:           rgba ( 82, 90, 87, 100 % );
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 249, 249, 249, 100 % );
     alternate-active-background: rgba ( 75, 81, 96, 89 % );
-    background:                  rgba ( 45, 48, 59, 95 % );
+    background:                  rgba ( 30, 33, 32, 95 % );
     alternate-normal-foreground: @foreground;
-    normal-background:           @background;
+    //normal-background:           @background;
+    normal-background:           rgba ( 48, 54, 53, 95%);
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 64, 132, 214, 20 % );
-    border-color:                rgba ( 124, 131, 137, 100 % );
+    selected-normal-background:  rgba ( 203, 205, 203, 40 % );
+    border-color:                rgba ( 152, 155, 151, 80 % );
     spacing:                     2;
-    separatorcolor:              rgba ( 29, 31, 33, 100 % );
+    separatorcolor:              rgba ( 255, 31, 33, 100 % );
     urgent-background:           rgba ( 29, 31, 33, 17 % );
     selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
@@ -39,8 +40,9 @@
 window {
     background-color: @background;
     border:           1;
-    border-color:     @separatorcolor;
-    border-radius:    20px;
+    //border-color:     @separatorcolor;
+    border-color:     @border-color;
+    border-radius:    18px;
     padding:          20;
 }
 mainbox {
@@ -49,7 +51,8 @@ mainbox {
 }
 message {
     border:       2px 0px 0px ;
-    border-color: @separatorcolor;
+    //border-color: @separatorcolor;
+    border-color: @foreground;
     padding:      1px ;
 }
 textbox {
@@ -58,10 +61,11 @@ textbox {
 listview {
     fixed-height: 0;
     border:       2px 0px 0px ;
-    border-color: @separatorcolor;
+    //border-color: @separatorcolor;
+    border-color: @border-color;
     spacing:      2px ;
     scrollbar:    true;
-    padding:      2px 0px 0px ;
+    padding:      8px 0px 0px ;
 }
 element {
     border:  0;
@@ -110,7 +114,7 @@ element.alternate.active {
 scrollbar {
     width:        4px ;
     border:       0;
-    handle-color: @normal-foreground;
+    handle-color: @active-foreground;
     handle-width: 4px ;
     padding:      0;
 }
