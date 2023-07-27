@@ -82,7 +82,7 @@ keys = [
 
     Key([mod], "Tab", lazy.layout.next(), desc="Move window focus to other window"),
 
-    Key([], "Print", lazy.spawn("scrot 'Arch-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'")),
+    Key([], "Print", lazy.spawn("scrot 'Arch-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$HOME/screenshots'")),
 
     Key([mod], "f", lazy.window.toggle_floating()),
 ]
