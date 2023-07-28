@@ -1,12 +1,14 @@
 # Qtile dotfiles
 
-Dependencies:
--Rofi
--Qtile-extras
--Scrot
--Qtile layout icons extra (already included)
+## Dependencies:
+- Zsh & Oh my Zsh
+- Alacritty
+- Rofi
+- Qtile-extras
+- Scrot
+- Qtile layout icons extra (already included)
 
-Screenshots:
+## Screenshots:
 
 <p align="center">
   <img src="/.github/qtile1.jpg?raw=true" alt="Screendhot 1"/>
