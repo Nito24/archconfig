@@ -169,12 +169,12 @@ screens = [
            
             widget.Sep(foreground = colors[10], background = colors[10], linewidth = 2, size_percent = 1, **powerlineLeft),
 		    
-            widget.Prompt(
+            widget.Prompt( # Fixed size not working, it resizes with text
                 foreground = black,
                 background = colors[9],
                 prompt = ' run  ',
                 **powerlineLeft
-                ), # Fixed size not working, it resizes with text
+                ), 
 
             widget.Clock(
                 format = '   %H:%M    󰃭  %d/%m/%y',
@@ -182,7 +182,7 @@ screens = [
                 foreground = black,
                 background= colors[8],
 		padding = 6, 
-                mouse_callbacks = {'Button3': lambda: qtile.cmd_spawn('alacritty -o font.size=9 -e calendar')},
+                mouse_callbacks = {'Button3': lambda: qtile.cmd_spawn('alacritty -o font.size=9 -e "cal -y"')},
                 **powerlineLeft
                 ),
 
