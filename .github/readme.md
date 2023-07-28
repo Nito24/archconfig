@@ -1,5 +1,11 @@
 # Qtile dotfiles
 
+Dependencies:
+-Rofi
+-Qtile-extras
+-Scrot
+-Qtile layout icons extra (already included)
+
 Screenshots:
 
 <p align="center">
