@@ -1,14 +1,25 @@
 # Qtile dotfiles
 
 ## Dependencies:
+- Qtile (obviously)
+  - Qtile layout icons extra (already included in this repo)
+- Qtile-extras
+  
 - Nitrogen
   - Archlinux-wallpaper
-- Zsh & Oh my Zsh
+    
+- Zsh
+  - Oh my Zsh
+
+- NeoVim
+  - NeoVim Pluggins
+
 - Alacritty
+  
 - Rofi
-- Qtile-extras
+  
 - Scrot
-- Qtile layout icons extra (already included)
+
 
 ## Screenshots:
 
