@@ -21,6 +21,7 @@
 - Scrot
 
 - Alsa
+  - Alsa-utils (pamixer)
 
 - Volumeicon
 
