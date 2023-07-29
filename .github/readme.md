@@ -2,7 +2,7 @@
 
 ## Dependencies:
 - Qtile (obviously)
-  * Qtile layout icons extra (already included in this repo)
+  - Qtile layout icons extra (already included in this repo)
 - Qtile-extras
   
 - Nitrogen
