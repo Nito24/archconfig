@@ -21,7 +21,7 @@
 - Scrot
 
 - Alsa
-  - Alsa-utils (pamixer)
+  - Pamixer (pulse audio mixer)
 
 - Volumeicon
 
