@@ -26,6 +26,8 @@
 
 - Xbindkeys (for spotify play/pause/skip)
 
+- Dunst (notifications)
+
 
 ## Screenshots:
 
