@@ -45,3 +45,11 @@
 <p align="center">
   <img src="/.github/qtile3.jpg?raw=true" alt="Screendhot 3"/>
 </p>
+
+
+<a href="https://github.com/Nito24">
+  <img
+    width="100%"
+    src="https://capsule-render.vercel.app/api?type=waving&section=footer&color=0284C7&fontColor=F0F9FF&height=128&descAlignY=90"
+  />
+</a>
