@@ -7,6 +7,8 @@ xset dpms 300 0 0
 
 setxkbmap -layout es
 
+dunst &
+
 picom &
 
 unclutter --jitter 10 --ignore-scrolling --start-hidden --timeout 10 --fork
