@@ -28,6 +28,8 @@
 
 - Dunst (notifications)
 
+- Unclutter
+
 
 ## Screenshots:
 
