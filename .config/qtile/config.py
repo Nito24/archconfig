@@ -320,6 +320,9 @@ auto_fullscreen = True
 focus_on_window_activation = "smart"
 reconfigure_screens = True
 
+# Center mouse cursor to the screen selected with the keyboard
+cursor_warp = True
+
 # If things like steam games want to auto-minimize themselves when losing
 # focus, should we respect this or not?
 auto_minimize = True
