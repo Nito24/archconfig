@@ -2,7 +2,7 @@
 
 ## Dependencies:
 - Nitrogen
-- Archlinux-wallpaper
+  - Archlinux-wallpaper
 - Zsh & Oh my Zsh
 - Alacritty
 - Rofi
