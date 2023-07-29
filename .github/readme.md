@@ -20,6 +20,8 @@
   
 - Scrot
 
+- Volumeicon
+
 - Xbindkeys (for spotify play/pause/skip)
 
 
