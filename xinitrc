@@ -11,11 +11,13 @@ unclutter --jitter 10 --ignore-scrolling --start-hidden --fork
 
 #nitrogen --restore
 
-#nitrogen --set-zoom-fill --random /usr/share/backgrounds/archlinux &
+nitrogen --set-zoom-fill --random /usr/share/backgrounds/archlinux &
 
-randomwallpaper &
+#randomwallpaper &
 
 volumeicon &
+
+xbindkeys &
 
 qtile start
 
