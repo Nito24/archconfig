@@ -1,6 +1,8 @@
 # Qtile dotfiles
 
 ## Dependencies:
+- Nitrogen
+- Archlinux-wallpaper
 - Zsh & Oh my Zsh
 - Alacritty
 - Rofi
