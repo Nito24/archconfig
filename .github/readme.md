@@ -1,4 +1,4 @@
-# Qtile dotfiles
+# Arch dotfiles
 
 ## Dependencies:
 - Qtile (obviously)
