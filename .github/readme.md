@@ -32,3 +32,7 @@
 <p align="center">
   <img src="/.github/qtile2.jpg?raw=true" alt="Screendhot 2"/>
 </p>
+
+<p align="center">
+  <img src="/.github/qtile3.jpg?raw=true" alt="Screendhot 3"/>
+</p>
