@@ -7,7 +7,7 @@ setxkbmap -layout es
 
 picom &
 
-unclutter --jitter 10 --ignore-scrolling --start-hidden --fork
+unclutter --jitter 10 --ignore-scrolling --start-hidden --timeout 10 --fork
 
 #nitrogen --restore
 
