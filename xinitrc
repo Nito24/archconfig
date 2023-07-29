@@ -1,7 +1,9 @@
 xset -b
 
 #screensaver and screen blanking
-xset s off -dpms
+#xset s off -dpms
+xset s off
+xset dpms 300 0 0
 
 setxkbmap -layout es
 
