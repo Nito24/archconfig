@@ -22,6 +22,7 @@
 
 - Alsa
   - Pamixer (pulse audio mixer)
+  - Amixer
 
 - Volumeicon
 
@@ -30,6 +31,8 @@
 - Dunst (notifications)
 
 - Unclutter
+
+  
 
 
 ## Screenshots:
