@@ -53,6 +53,10 @@
   <img src="/.github/qtile4.jpg?raw=true" alt="Screendhot 4"/>
 </p>
 
+<p align="center">
+  <img src="/.github/qtile5.jpg?raw=true" alt="Screendhot 5"/>
+</p>
+
 
 <a href="https://github.com/Nito24">
   <img
