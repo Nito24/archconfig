@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+nitrogen --set-zoom-fill --random /usr/share/backgrounds/bestarch
