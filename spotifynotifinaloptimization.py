@@ -77,12 +77,17 @@ try :
 
 
     atributes = ["title","artist","artUrl","album"]
+    
+    print(metadata)
 
     for i in atributes:
-        result.append(meta_scrape(i, "'", "'"))
+        met = meta_scrape(i, "'", "'")
+        if '"' in met:
+            result.append((meta_scrape(i, '"', '"')).replace("'",'’'))
+        else:
+            result.append(met)
+        #result.append(meta_scrape(i, "'", "'"))
 
-    #print(metadata)
-    print(result[0])
     
     result.append(int(meta_scrape("mpris:length","(",",")))
 
@@ -120,7 +125,7 @@ try :
     bot = bottom_bar(max_lenght, result[9], result[5], result[4])
 
     result.append(down_icon(result[2], result[1], result[3]))
-    run_cmd(f"dunstify -a MusicPlayer24 -h string:x-canonical-private-synchronous:title '{result[7]+' '}│ {result[0]} -{' '+result[1]}' '{'   '+result[8]+'│ '+result[3]}\n\n{bot}' -h int:value:{result[6]} -i '{result[11]}' -r 1424")
+    run_cmd(f"""dunstify -a MusicPlayer24 -h string:x-canonical-private-synchronous:title '{result[7]+' '}│ {result[0]} -{' '+result[1]}' '{'   '+result[8]+'│ '+result[3]}\n\n{bot}' -h int:value:{result[6]} -i '{result[11]}' -r 1424""")
 
 
 # No music player detected
