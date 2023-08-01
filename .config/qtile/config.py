@@ -274,6 +274,8 @@ screens = [
             widget.Systray(
                 foreground = white,
                 background = colors[0],
+		padding = 20,
+                icon_size = 15,
                 ),
 
 	    widget.Sep(
