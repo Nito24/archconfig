@@ -16,7 +16,8 @@
 
 - Alacritty
   
-- Rofi ["App launcher/menu" could be replaced with dmenu (which is faster btw)]
+- <s>Rofi ["App launcher/menu" could be replaced with dmenu (which is faster btw)]</s>
+- Dmenu
   
 - Scrot
 
