@@ -58,11 +58,11 @@
 </p>
 
 <p align="center">
-  <img src="/.github/qtilenotif1.jpg?raw=true" alt="Screendhot notification"/>
+  <img src="/.github/qtilenotif1.gif?raw=true" alt="Screenshot notification"/>
 </p>
 
 <p align="center">
-  <img src="/.github/qtilenotif2.jpg?raw=true" alt="Screendhot notification 2"/>
+  <img src="/.github/qtilenotif2.gif?raw=true" alt="Screenshot notification 2"/>
 </p>
 
 
