@@ -57,6 +57,14 @@
   <img src="/.github/qtile5.jpg?raw=true" alt="Screendhot 5"/>
 </p>
 
+<p align="center">
+  <img src="/.github/qtilenotif1.jpg?raw=true" alt="Screendhot notification"/>
+</p>
+
+<p align="center">
+  <img src="/.github/qtilenotif2.jpg?raw=true" alt="Screendhot notification 2"/>
+</p>
+
 
 <a href="https://github.com/Nito24">
   <img
