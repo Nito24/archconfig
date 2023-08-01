@@ -66,9 +66,21 @@ keys = [
     # Spawn terminal
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Spawn rofi
-    Key([mod], "r", lazy.spawn("rofi -show drun -show-icons"), desc="Spawn a command using rofi"),
+    #Key([mod], "r", lazy.spawn("rofi -show drun -show-icons"), desc="Spawn a command using rofi"),
     # Spawn command
     Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    # Spawn Dmenu
+    Key([mod], 'r', lazy.run_extension(extension.DmenuRun(
+        dmenu_command = 'dmenu_run -c -l 12',
+        dmenu_prompt="  ",
+        #dmenu_font="Andika-8",
+        background="#1f2322",
+        #foreground="#9b9e9a",
+        foreground="#cdcbcd",
+        selected_background="#262b2a",
+        selected_foreground="#fff",
+        dmenu_height=24,
+        ))),
 	
     # Toggle between different layouts as defined below
     Key([mod], "space", lazy.next_layout(), desc="Toggle between layouts"),
@@ -182,7 +194,7 @@ screens = [
                 foreground = black,
                 background= colors[8],
 		padding = 6, 
-                mouse_callbacks = {'Button3': lambda: qtile.cmd_spawn('alacritty -o font.size=9 -e "cal -y"')},
+                mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('calendar2 curr'), 'Button5': lambda: qtile.cmd_spawn('calendar2 next'),'Button4': lambda: qtile.cmd_spawn('calendar2 prev')},
                 **powerlineLeft
                 ),
 
