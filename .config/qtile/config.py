@@ -102,7 +102,7 @@ keys = [
 #	GROUPS
 #-----------------------------------------------------------
 
-groups = [Group(i) for i in "12345"]
+groups = [Group(i) for i in "1234567890"]
 
 for i in groups:
     keys.extend(
@@ -210,6 +210,7 @@ screens = [
             widget.Sep(foreground = colors[8], background = colors[8], linewidth = 3, size_percent = 1, **powerlineLeft),
 
             widget.GroupBox(
+		hide_unused=True, # Only show used ones
                 disable_drag = True, # Disable dragging groups to change the order
 		center_aligned = True,
 		highlight_method = 'line',
