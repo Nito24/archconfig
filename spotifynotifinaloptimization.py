@@ -55,7 +55,7 @@ def down_icon (url, artist, album):
     available_icons = listdirectory('/home/nito/.local/share/icons/temp')
 
     if (icon_name + '.jpg') not in available_icons:
-        run_cmd(f"cd /home/nito/.local/share/icons/temp/ ; wget {url} ; mv {name} '{icon_name}.jpg'")
+        run_cmd(f"cd /home/nito/.local/share/icons/temp/ ; wget -q {url} ; mv {name} '{icon_name}.jpg'")
     
     return('/home/nito/.local/share/icons/temp/' + f"{icon_name}.jpg")
 
@@ -78,7 +78,7 @@ try :
 
     atributes = ["title","artist","artUrl","album"]
     
-    print(metadata)
+    #print(metadata)
 
     for i in atributes:
         met = meta_scrape(i, "'", "'")
