@@ -49,8 +49,8 @@ LIST_OF_APPS="neofetch qtile picom archlinux-wallpaper unclutter dunst xbindkeys
 LIST_OF_APPS_AUR="qtile-extras" # spotify spicetify-cli
 
 
-echo "Nito's arch installation script, be sure to run this as a user (with home directory) and with sudo privileges. Already working internet connection is needed for this script to work"
-echo "Use type [Y] to continue with the installation or [N] (or Crt + C) to cancel"
+echo -e "Nito's arch installation script, be sure to run this as a user (with home directory) and with sudo privileges.\nAlready working internet connection is needed for this script to work"
+echo "Type [Y] to continue with the installation or [N] (or Crt + C) to cancel"
 echo -n "> "
 
 
