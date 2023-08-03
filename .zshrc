@@ -104,6 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias neofetch='neofetch --source /home/nito/.config/neofetch/asciiart.txt --ascii_colors 15 1 7 15'
-neofetch
+#neofetch
 
 alias ls='lsd'
