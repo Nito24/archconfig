@@ -95,8 +95,17 @@ keys = [
     # Screenshot using scrot
     Key([], "Print", lazy.spawn("scrot 'Arch-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$HOME/screenshots'")),
 
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%"), desc="More brightnes"),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc="Less brightnes"),
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%"), desc="Brightness up"),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc="Brightness down"),
+
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("volume-set up"), desc="Volume up"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("volume-set down"), desc="Volume down"),
+    Key([], "XF86AudioMute", lazy.spawn("volume-set mute"), desc="Volume toggle mute"),
+
+    Key([], "XF86AudioPlay", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause; musicnotif")),
+    Key([], "XF86AudioStop", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop")),
+    Key([], "XF86AudioPrev", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous; sleep 0.2;musicnotif")),
+    Key([], "XF86AudioNext", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next; sleep 0.2; musicnotif")),
 ]
 
 
