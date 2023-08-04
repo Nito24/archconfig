@@ -114,7 +114,11 @@ then
 	cp .xinitrc $userhome
 	#cp .zshrc
 
-	
+
+ 	# Stop the ANOYING BIOS BEEP
+  	sudo echo blacklist pcspkr >> /etc/modprobe.d/blacklist.conf
+
+ 
 	echo "Installation complete, you can now safely remove/delete this directory"
 	#chsh $USER -s /bin/zsh # Set zsh as users terminal
 	#wget --no-check-certificate http://install.ohmyz.sh -O - | sh (INSTALLER)
