@@ -108,7 +108,7 @@ then
 	cp -r .config $userhome
 	cp -r .local $userhome
  	cd /
-	sudo cp -r /usr / # Custom scripts
+	sudo cp -r $execpath"/usr" / # Custom scripts
  	cd $execpath
 	cp .xbindkeysrc $userhome
 	cp .xinitrc $userhome
