@@ -45,7 +45,7 @@
 # Custom icons
 
 LIST_OF_DEVEL_APPS="base-devel git make wget curl fakeroot p7zip neovim man" #git is not really needed since thats how you have suposedly downloaded the config. Same goes with nvim, it should already be installed
-LIST_OF_APPS="neofetch xf86-video-nouveau xorg-server xorg-xinit qtile picom archlinux-wallpaper unclutter dunst xbindkeys alacritty firefox alsa-utils pulseaudio pulseaudio-alsa volumeicon zsh lsd powerline-fonts"
+LIST_OF_APPS="neofetch xf86-video-nouveau xorg-server xorg-xinit qtile picom archlinux-wallpaper unclutter dunst xbindkeys brightnessctl alacritty firefox alsa-utils pulseaudio pulseaudio-alsa volumeicon zsh lsd powerline-fonts"
 LIST_OF_APPS_AUR="qtile-extras" # spotify spicetify-cli
 
 
