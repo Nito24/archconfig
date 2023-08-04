@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 send_notification() {
 	TODAY=$(date '+%-d')
