@@ -69,18 +69,19 @@ keys = [
     #Key([mod], "r", lazy.spawn("rofi -show drun -show-icons"), desc="Spawn a command using rofi"),
     # Spawn command
     Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    
     # Spawn Dmenu
-    Key([mod], 'r', lazy.run_extension(extension.DmenuRun(
-        dmenu_command = 'dmenu_run -c -l 12',
-        dmenu_prompt="  ",
-        #dmenu_font="Andika-8",
-        background="#1f2322",
-        #foreground="#9b9e9a",
-        foreground="#cdcbcd",
-        selected_background="#262b2a",
-        selected_foreground="#fff",
-        dmenu_height=24,
-        ))),
+    #Key([mod], 'r', lazy.run_extension(extension.DmenuRun(
+    #    dmenu_command = 'dmenu_run -c -l 12',
+    #    dmenu_prompt="  ",
+    #    #dmenu_font="Andika-8",
+    #    background="#1f2322",
+    #    #foreground="#9b9e9a",
+    #    foreground="#cdcbcd",
+    #    selected_background="#262b2a",
+    #    selected_foreground="#fff",
+    #    dmenu_height=24,
+    #    ))),
 	
     # Toggle between different layouts as defined below
     Key([mod], "space", lazy.next_layout(), desc="Toggle between layouts"),
@@ -114,7 +115,7 @@ keys = [
 #	GROUPS
 #-----------------------------------------------------------
 
-groups = [Group(i) for i in "1234567890"]
+groups = [Group(i) for i in "12345"]
 
 for i in groups:
     keys.extend(
@@ -222,7 +223,7 @@ screens = [
             widget.Sep(foreground = colors[8], background = colors[8], linewidth = 3, size_percent = 1, **powerlineLeft),
 
             widget.GroupBox(
-		hide_unused=True, # Only show used ones
+		#hide_unused=True,  Only show used ones
                 disable_drag = True, # Disable dragging groups to change the order
 		center_aligned = True,
 		highlight_method = 'line',
