@@ -94,6 +94,9 @@ keys = [
     
     # Screenshot using scrot
     Key([], "Print", lazy.spawn("scrot 'Arch-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$HOME/screenshots'")),
+
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%"), desc="More brightnes"),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc="Less brightnes"),
 ]
 
 
