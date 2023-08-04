@@ -21,7 +21,7 @@ nitrogen --set-zoom-fill --random /usr/share/backgrounds/archlinux &
 
 volumeicon &
 
-xbindkeys &
+#xbindkeys &
 
 qtile start
 
