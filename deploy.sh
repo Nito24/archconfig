@@ -44,7 +44,7 @@
 #
 # Custom icons
 
-LIST_OF_DEVEL_APPS="base-devel git mkpkg wget curl p7zip neovim" #git is not really needed since thats how you have suposedly downloaded the config. Same goes with nvim, it should already be installed
+LIST_OF_DEVEL_APPS="base-devel git makepkg make wget curl p7zip neovim" #git is not really needed since thats how you have suposedly downloaded the config. Same goes with nvim, it should already be installed
 LIST_OF_APPS="neofetch xf86-video-nouveau xorg-server xorg-xinit qtile picom archlinux-wallpaper unclutter dunst xbindkeys alacritty firefox alsa-utils pulseaudio pulseaudio-alsa volumeicon zsh powerline-fonts"
 LIST_OF_APPS_AUR="qtile-extras" # spotify spicetify-cli
 
@@ -87,7 +87,7 @@ then
 	mkdir font && cd font
 	wget 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip'
 	7z x CascadiaCode.zip
-	mkdir $userhome"/.local/share/fonts"
+	mkdir -p $userhome"/.local/share/fonts"
 	cp *.ttf $userhome"/.local/share/fonts"
 	fc-cache -f -v
 
