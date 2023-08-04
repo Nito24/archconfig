@@ -9,7 +9,7 @@ setxkbmap -layout es
 
 dunst &
 
-picom &
+#picom &
 
 unclutter --jitter 10 --ignore-scrolling --start-hidden --timeout 10 --fork
 
@@ -22,6 +22,8 @@ nitrogen --set-zoom-fill --random /usr/share/backgrounds/archlinux &
 volumeicon &
 
 #xbindkeys &
+
+brightnessctl set 50% &
 
 qtile start
 
