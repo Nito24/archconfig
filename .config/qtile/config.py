@@ -96,17 +96,20 @@ keys = [
     # Screenshot using scrot
     Key([], "Print", lazy.spawn("scrot 'Arch-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$HOME/screenshots'")),
 
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%"), desc="Brightness up"),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc="Brightness down"),
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessnotif up"), desc="Brightness up"),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessnotif down"), desc="Brightness down"),
 
     Key([], "XF86AudioRaiseVolume", lazy.spawn("volume-set up"), desc="Volume up"),
     Key([], "XF86AudioLowerVolume", lazy.spawn("volume-set down"), desc="Volume down"),
     Key([], "XF86AudioMute", lazy.spawn("volume-set mute"), desc="Volume toggle mute"),
 
-    Key([], "XF86AudioPlay", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause; musicnotif")),
-    Key([], "XF86AudioStop", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop")),
-    Key([], "XF86AudioPrev", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous; sleep 0.2;musicnotif")),
-    Key([], "XF86AudioNext", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next; sleep 0.2; musicnotif")),
+    Key([], "XF86AudioPlay", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"), lazy.spawn("musicnotif")),
+    Key([], "XF86AudioStop", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"), lazy.spawn("musicnotif")),
+    Key([], "XF86AudioPrev", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"), lazy.spawn("musicnotif")),
+    Key([], "XF86AudioNext", lazy.spawn("dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"), lazy.spawn("musicnotif")),
+
+    Key([mod], "Left", lazy.screen.prev_group()),
+    Key([mod], "Right", lazy.screen.next_group()),
 ]
 
 
@@ -158,7 +161,7 @@ layouts = [
 
 widget_defaults = dict(
     font="sans",
-    fontsize=12,
+    fontsize=16,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -290,73 +293,4 @@ screens = [
                         	colour_have_updates = colors[10],
                         	background = colors[1],
                         	display_format = ' : {updates} updates',
-                        	no_update_string='󱂱  No updates',
-                        	update_interval = 1800,
-                        	),
-                        ],
-                **powerline
-                ),
-
-            widget.Systray(
-                foreground = white,
-                background = colors[0],
-		padding = 20,
-                icon_size = 15,
-                ),
-
-	    widget.Sep(
-		foreground = colors[0],
-		linewidth = 10,
-                size_percent = 1,
-		),
-            ],
-            24,
-            background = backgroundColor,
-            margin = 2,
-        ),
-    ),
-]
-
-
-# Drag floating layouts.
-mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
-    Click([mod], "Button2", lazy.window.bring_to_front()),
-]
-
-dgroups_key_binder = None
-dgroups_app_rules = []  # type: list
-follow_mouse_focus = True
-bring_front_click = False
-cursor_warp = False
-floating_layout = layout.Floating(
-    float_rules=[
-        # Run the utility of `xprop` to see the wm class and name of an X client.
-        *layout.Floating.default_float_rules,
-        Match(wm_class="confirmreset"),  # gitk
-        Match(wm_class="makebranch"),  # gitk
-        Match(wm_class="maketag"),  # gitk
-        Match(wm_class="ssh-askpass"),  # ssh-askpass
-        Match(title="branchdialog"),  # gitk
-        Match(title="pinentry"),  # GPG key password entry
-
-        Match(title='Volume Control'),#volume
-    ]
-)
-auto_fullscreen = True
-focus_on_window_activation = "smart"
-reconfigure_screens = True
-
-# Center mouse cursor to the screen selected with the keyboard
-cursor_warp = True
-
-# If things like steam games want to auto-minimize themselves when losing
-# focus, should we respect this or not?
-auto_minimize = True
-
-# When using the Wayland backend, this can be used to configure input devices.
-wl_input_rules = None
-
-#Change to LG3D if java apps dont work correctly
-wmname = "Qtile"
+                        	n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
