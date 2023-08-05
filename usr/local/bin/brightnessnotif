@@ -1,0 +1,14 @@
+#!/bin/sh
+case $1 in
+up)
+    brightnessctl s +5%
+    ;;
+down)
+    brightnessctl s 5%-
+esac
+
+percent1=$(echo $(brightnessctl g)*100 | bc)
+
+percent=$(echo $percent1/$(brightnessctl m) | bc)
+
+dunstify "$percent%" -i /home/nito/.local/share/icons/notification-brightness.png -a some_volume_notifiers -t 1000 -h int:value:$percent -h string:synchronous:'$bar' --replace=10
